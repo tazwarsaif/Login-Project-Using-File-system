@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="/dashboard.css" />
+  </head>
+  <body>
+    <p style="font-size: 40px">Hello, <%= name %>!</p>
+    <main class="mainbox">
+      <form action="/delete" method="POST">
+        <button style="background-color: rgb(255, 135, 135)">Delete</button>
+        <input type="hidden" value="<%= username %>" name="username" />
+      </form>
+      <form action="/edit" method="POST">
+        <input type="hidden" value="<%= username %>" name="username" />
+        <button style="background-color: rgb(148, 231, 195)">Edit</button>
+      </form>
+      <form action="/logout" method="POST">
+        <button style="background-color: rgb(179, 179, 179)">Logout</button>
+        <input type="hidden" value="<%= username %>" name="username" />
+      </form>
+    </main>
+  </body>
+</html>

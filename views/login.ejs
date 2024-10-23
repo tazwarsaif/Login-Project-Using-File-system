@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <main class="mainbox">
+      <form action="/login" method="POST">
+        <div class="mainform">
+          <p style="font-size: 60px; margin-bottom: 5px">Login</p>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+          />
+          <button type="submit" style="background-color: rgb(108, 178, 108)">
+            Submit
+          </button>
+        </div>
+      </form>
+      <% if(loginFlag===false) {%>
+      <p style="margin-left: 30%; color: red">Wrong Credentials</p>
+      <% } %>
+      <form action="/register" method="GET">
+        <div class="mainform">
+          <button type="submit" style="background-color: rgb(207, 175, 93)">
+            Register
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

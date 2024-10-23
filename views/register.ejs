@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Account</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <main class="mainbox">
+      <form action="/register" method="POST">
+        <div class="mainform">
+          <p style="font-size: 60px; margin-bottom: 5px">Register</p>
+          <input type="text" name="name" id="name" placeholder="name" />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="email"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+          />
+          <button type="submit" style="background-color: rgb(207, 175, 93)">
+            Submit
+          </button>
+        </div>
+      </form>
+      <form action="/">
+        <div class="mainform">
+          <button type="submit" style="background-color: rgb(108, 178, 108)">
+            Login
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

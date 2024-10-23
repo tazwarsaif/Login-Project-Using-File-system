@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="/dashboard.css" />
+  </head>
+  <body>
+    <form action="/dashboard/<%= username %>" method="POST">
+      <p style="font-size: 60px">Update User</p>
+      <main class="updatebox">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="name"
+          value="<%= name %>"
+        />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="email"
+          value="<%= username %>"
+          readonly
+        />
+        <input
+          type="text"
+          name="password"
+          id="password"
+          placeholder="password"
+          value="<%= password %>"
+        />
+        <button type="submit">Submit</button>
+      </main>
+    </form>
+  </body>
+</html>
